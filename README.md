@@ -5,7 +5,7 @@ This Python module can solve Sodoku problems.
 **HOW TO SOVLE**
 
 To run the solver:
-python pySudoku.py Sudokus.txt
+python pysudoku.py Sudokus.txt
 
 To run the generator:
 python Generator.py
