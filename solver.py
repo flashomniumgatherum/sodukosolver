@@ -352,4 +352,4 @@ if __name__ == "__main__":
 
 	board = solve(SudokuBoard(boards.board_evil2))
 	print board
-	print "Game won!" if board else "Lost!"
+	print "You win!" if board else "You Lose!"
