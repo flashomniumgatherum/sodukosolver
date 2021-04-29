@@ -6,14 +6,8 @@ from copy import deepcopy
 log = logging
 
 class Square(object):
-	""" 
-	A square on the board.
-	This object is used so that there is a reference to the area, and i can 
-	index by both rows and columns. It evaluates to the number it holds to 
-	simplify checks for complete games, and possible moves.
-	"""
 	def __init__(self, num):
-		self.value = int(num)
+	        self.value = int(num)
 		self.options = set() if self.value else set(range(1,10))
 		
 	def __eq__(self, other):
