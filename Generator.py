@@ -1,4 +1,4 @@
-import pySudoku
+import pysudoku
 import random
 import time
 
@@ -51,7 +51,7 @@ def populateBoard(s, row, col):
     set it to blank and return false.
     """
     if row == 8 and col == 8:
-        used = pySudoku.test_cell(s, row, col)
+        used = pysudoku.test_cell(s, row, col)
         s[row][col] = used.index(0)
         return True
 
@@ -90,7 +90,7 @@ def DFS_solve(copy_s, row, col):
     if copy_s[row][col] == 0:
         # Used = list of size 10 representing which numbers are possible
         # in the puzzle. 0 = possible, 1 = not possible. Ignore index 0.
-        used = pySudoku.test_cell(copy_s, row, col)
+        used = pysudoku.test_cell(copy_s, row, col)
         # No possible solutions. Return 0 for number of solutions
         if 0 not in used:
             return 0
@@ -130,7 +130,7 @@ def reduce_sudoku(s, difficulty):
 
         copy_s = [l[:] for l in s]
 
-        pySudoku.initial_try(copy_s)
+        pysudoku.initial_try(copy_s)
 
         for line in copy_s:
             if 0 in line:
