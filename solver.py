@@ -350,6 +350,6 @@ if __name__ == "__main__":
 	import sys
 	logging.basicConfig(level=logging.INFO)
 
-	board = solve(SudokuBoard(boards.board_evil2))
+	board = solve(SudokuBoard(boards.board_final))
 	print board
 	print "You win!" if board else "You Lose!"
