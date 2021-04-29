@@ -10,4 +10,4 @@ for n, b in boards.__dict__.iteritems():
 	print "\n\n%s" % n
 	board = solve(SudokuBoard(b))
 	print board
-	print "Game won!" if board else "Lost!"
+	print "You Win!" if board else "You Lose!"
