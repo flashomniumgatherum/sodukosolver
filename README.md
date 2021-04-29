@@ -4,19 +4,11 @@ This Python module can solve Sodoku problems.
 
 **HOW TO SOVLE**
 
-import solver
-import boards
+To run the solver:
+python pySudoku.py Sudokus.txt
 
-board = solver.solve(boards.board_hard)
+To run the generator:
+python Generator.py
 
-To solve a different problem, pass in the board you want to solve to the constructor of the SudokuBoard.
-
-The Board should be a list of 9 strings of length 9.
-
-Each entry represents a square on the board.
-
-Use 0 for blanks. 
-
-Whitespaces will be stripped, and can be added to the strings for readability.
-
-See boards.py for example boards.
+Of course, you can use the solver with any text file that contains Sudoku puzzles.
+The generator writes to a file named "SudokuPuzzles.txt", with each puzzle being represented as one line of integers read from the top left to the bottom right of the grid.
