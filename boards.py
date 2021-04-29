@@ -1,5 +1,3 @@
-/* TESTING SAMPLES */ 
-
 board_easy = [
 '104  000  306',
 '809  030  570',
