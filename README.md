@@ -1,14 +1,15 @@
 # sodukosolver
 
-This Python module can solve Sodoku problems. 
+This Python query can solve Sodoku puzzles. 
 
-**HOW TO SOVLE**
-
-To run the solver:
+--Run Query--
+solver:
 python pysudoku.py Sudokus.txt
 
-To run the generator:
+Generator:
 python Generator.py
 
-Of course, you can use the solver with any text file that contains Sudoku puzzles.
-The generator writes to a file named "SudokuPuzzles.txt", with each puzzle being represented as one line of integers read from the top left to the bottom right of the grid.
+Please note, you are able to use the solver with any text file that contains Sudoku puzzles.
+The generator writes to a file named "SudokuPuzzles.txt".
+Each puzzle is represented as a single line of integers.
+Read grid by first row, left to right (A1 - A9); repeat for second row, left to right (B1 - B9); ... repeat for ninth row, left to right (I1 - I9).
