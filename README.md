@@ -3,6 +3,7 @@
 This Python query can solve Sodoku puzzles. 
 
 --Run Query--
+
 solver:
 python pysudoku.py Sudokus.txt
 
