@@ -1,4 +1,4 @@
-import SudokuPuzzles.txt
+import filename
 import time
 
 def print_sudoku(s):
