@@ -1,4 +1,4 @@
-import filename
+import fileinput
 import time
 
 def print_sudoku(s):
